@@ -1,12 +1,12 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'MACD',
+  stratName: 'IWannaBeRich-BBRSI',
   gekkoConfig: {
     watch: {
-      exchange: 'poloniex',
+      exchange: 'binance',
       currency: 'USDT',
-      asset: 'BTC'
+      asset: 'ETH'
     },
 
 //    daterange: 'scan',
@@ -61,19 +61,18 @@ const config = {
     },
   },
 
-  candleValues: [5,10,15,30,60,120,240],
+  candleValues: [5],
   getProperties: () => ({
+historySize: 1300, // max possible SMA_long  
+interval : randomExt.integer(100,1),
+low : randomExt.integer(100,1),
+high : randomExt.integer(100,1),
+persistence : 1,
+TimePeriod : randomExt.integer(1000,1),
+NbDevUp : randomExt.integer(1000,1),
+NbDevDn : randomExt.integer(1000,1),
 
-    historySize: randomExt.integer(100, 20),
-
-    short: randomExt.integer(15,5),
-    long: randomExt.integer(40,15),
-    signal: randomExt.integer(12,6),
-
-    thresholds: {
-      up: randomExt.float(20,0).toFixed(2),
-      down: randomExt.float(0,-20).toFixed(2),
-      persistence: randomExt.integer(9,0),
+    
     },
 
     candleSize: randomExt.pick(config.candleValues)
