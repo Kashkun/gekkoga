@@ -64,13 +64,13 @@ const config = {
   candleValues: [5],
   getProperties: () => ({
 historySize: 1300, // max possible SMA_long  
-interval : randomExt.integer(100,1),
-low : randomExt.integer(100,1),
-high : randomExt.integer(100,1),
-persistence : 1,
-TimePeriod : randomExt.integer(1000,1),
-NbDevUp : randomExt.integer(1000,1),
-NbDevDn : randomExt.integer(1000,1),
+interval: randomExt.integer(100,1),
+low: randomExt.integer(100,1),
+high: randomExt.integer(100,1),
+persistence: 1,
+TimePeriod: randomExt.integer(1000,1),
+NbDevUp: randomExt.integer(1000,1),
+NbDevDn: randomExt.integer(1000,1),
 
     
     },
