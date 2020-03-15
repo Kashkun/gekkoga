@@ -73,7 +73,7 @@ NbDevUp: randomExt.integer(1000,1),
 NbDevDn: randomExt.integer(1000,1),
 
     
-    },
+   
 
     candleSize: randomExt.pick(config.candleValues)
   })
