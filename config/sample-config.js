@@ -78,7 +78,7 @@ long:randomExt.integer(100,1),
 
 low:randomExt.integer(100,1),
 high:randomExt.integer(100,1),
-signal:randomExt.integer(100,1)
+signal:randomExt.integer(100,1),
 
 
 low :0.5,
