@@ -80,14 +80,14 @@ high:randomExt.integer(100,1),
 signal:randomExt.integer(100,1)
 
 [stop_loss]
-low = 0.5
-high = 99.0
-stop_loss = 0.5
+low :0.5,
+high : 99.0,
+stop_loss : 0.5,
 
 [take_profit]
-low = 0.2
-high = 100.0
-take_profit = 1.0
+low :0.2,
+high :100.0,
+take_profit : 1.0,
    
     candleSize: randomExt.pick(config.candleValues)
   })
