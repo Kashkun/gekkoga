@@ -1,7 +1,7 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'IWannaBeRich_BBRSI',
+  stratName: 'macd_cross',
   gekkoConfig: {
     watch: {
       exchange: 'binance',
@@ -12,18 +12,18 @@ const config = {
 //    daterange: 'scan',
 
     daterange: {
-      from: '2020-02-01 00:00',
-      to: '2020-02-18 00:00'
+      from: '2020-04-01 00:00',
+      to: '2020-04-18 00:00'
     },
 
     simulationBalance: {
-      'asset': 1,
-      'currency': 1
+      'asset': 9,
+      'currency': 100
     },
 
     slippage: 0.05,
-    feeTaker: 0.25,
-    feeMaker: 0.15,
+    feeTaker: 0.075,
+    feeMaker: 0.075,
     feeUsing: 'taker', // maker || taker
 
   },
@@ -63,18 +63,32 @@ const config = {
 
   candleValues: [5],
   getProperties: () => ({
-historySize: 1300, // max possible SMA_long  
-interval: 1,
-low: randomExt.integer(100,1),
-high: randomExt.integer(100,1),
-persistence: 1,
-TimePeriod: randomExt.integer(1000,1),
-NbDevUp: randomExt.integer(1000,1),
-NbDevDn: randomExt.integer(1000,1),
+historySize:randomExt.integer(1000,1)
+    [short]
+low:randomExt.integer(100,1), 
+high:randomExt.integer(100,1),
+short:randomExt.integer(100,1), 
 
-    
+[long]
+low:randomExt.integer(100,1),
+high:randomExt.integer(100,1),
+long:randomExt.integer(100,1),
+
+[signal]
+low:randomExt.integer(100,1),
+high:randomExt.integer(100,1),
+signal:randomExt.integer(100,1)
+
+[stop_loss]
+low = 0.5
+high = 99.0
+stop_loss = 0.5
+
+[take_profit]
+low = 0.2
+high = 100.0
+take_profit = 1.0
    
-
     candleSize: randomExt.pick(config.candleValues)
   })
 };
