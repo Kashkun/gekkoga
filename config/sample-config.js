@@ -63,28 +63,29 @@ const config = {
 
   candleValues: [5],
   getProperties: () => ({
+    
 historySize:randomExt.integer(1000,1),
-    [short]
+    
 low:randomExt.integer(100,1), 
 high:randomExt.integer(100,1),
 short:randomExt.integer(100,1), 
 
-[long]
+
 low:randomExt.integer(100,1),
 high:randomExt.integer(100,1),
 long:randomExt.integer(100,1),
 
-[signal]
+
 low:randomExt.integer(100,1),
 high:randomExt.integer(100,1),
 signal:randomExt.integer(100,1)
 
-[stop_loss]
+
 low :0.5,
 high : 99.0,
 stop_loss : 0.5,
 
-[take_profit]
+
 low :0.2,
 high :100.0,
 take_profit : 1.0,
