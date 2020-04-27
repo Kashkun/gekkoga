@@ -63,7 +63,7 @@ const config = {
 
   candleValues: [5],
   getProperties: () => ({
-historySize:randomExt.integer(1000,1)
+historySize:randomExt.integer(1000,1),
     [short]
 low:randomExt.integer(100,1), 
 high:randomExt.integer(100,1),
