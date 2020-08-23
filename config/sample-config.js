@@ -61,7 +61,7 @@ const config = {
     },
   },
 
-  candleValues: [5],
+  candleValues: [5,15],
   getProperties: () => ({
     
 
