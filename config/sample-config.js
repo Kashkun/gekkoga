@@ -12,18 +12,18 @@ const config = {
 //    daterange: 'scan',
 
     daterange: {
-      from: '2020-08-01 00:00',
-      to: '2020-08-17 00:00'
+      from: '2018-08-01 00:00',
+      to: '2018-08-17 00:00'
     },
 
     simulationBalance: {
-      'asset': 9,
-      'currency': 100
+      'asset': 1,
+      'currency': 1
     },
 
     slippage: 0.05,
-    feeTaker: 0.075,
-    feeMaker: 0.075,
+    feeTaker: 0.25,
+    feeMaker: 0.15,
     feeUsing: 'taker', // maker || taker
 
   },
@@ -61,11 +61,7 @@ const config = {
     },
   },
 
-  candleValues: [5,15],
-  getProperties: () => ({
-    
-
-SMA_long: randomExt.integer(1000, 10),
+  SMA_long: randomExt.integer(1000, 10),
 SMA_short: randomExt.integer(1000, 10),
 
 
@@ -84,9 +80,9 @@ BEAR_RSI_low: randomExt.integer(70, 10),
 
 ROC: randomExt.integer(1000, 1),
 ROC_lvl: 0,
+    },
 
-
-    
+    candleSize: randomExt.pick(config.candleValues)
   })
 };
 
