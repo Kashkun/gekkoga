@@ -61,7 +61,10 @@ const config = {
     },
   },
 
-  SMA_long: randomExt.integer(1000, 10),
+  candleValues: [5,10,15,30,60,120,240],
+  getProperties: () => ({
+
+   SMA_long: randomExt.integer(1000, 10),
 SMA_short: randomExt.integer(1000, 10),
 
 
@@ -87,3 +90,4 @@ ROC_lvl: 0,
 };
 
 module.exports = config;
+
