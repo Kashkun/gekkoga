@@ -65,25 +65,25 @@ const config = {
   getProperties: () => ({
     
 
-SMA_long: randomExt.integer(1000,1),
-SMA_short: randomExt.integer(1000,1),
+SMA_long: randomExt.integer(1000, 1),
+SMA_short: randomExt.integer(1000, 1),
 
 
-BULL_RSI: randomExt.integer(1000,1),
-BULL_RSI_high: randomExt.integer(1000,1),
-BULL_RSI_low: randomExt.integer(1000,1),
+BULL_RSI: randomExt.integer(1000, 1),
+BULL_RSI_high: randomExt.integer(1000, 1),
+BULL_RSI_low: randomExt.integer(1000, 1),
 
 
-IDLE_RSI: randomExt.integer(1000,1),
-IDLE_RSI_high: randomExt.integer(1000,1),
-IDLE_RSI_low: randomExt.integer(1000,1),
+IDLE_RSI: randomExt.integer(1000, 1),
+IDLE_RSI_high: randomExt.integer(1000, 1),
+IDLE_RSI_low: randomExt.integer(1000, 1),
 
-BEAR_RSI: randomExt.integer(1000,1),
-BEAR_RSI_high: randomExt.integer(1000,1),
-BEAR_RSI_low: randomExt.integer(1000,1),
+BEAR_RSI: randomExt.integer(1000, 1),
+BEAR_RSI_high: randomExt.integer(1000, 1),
+BEAR_RSI_low: randomExt.integer(1000, 1),
 
 
-ROC: randomExt.integer(1000,1),
+ROC: randomExt.integer(1000, 1),
 ROC_lvl: 0,
 
 
