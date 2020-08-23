@@ -64,34 +64,29 @@ const config = {
   candleValues: [5],
   getProperties: () => ({
     
-#SMA
+
 SMA_long: randomExt.float(1000,1),
 SMA_short: randomExt.float(1000,1),
 
-#Bull
+
 BULL_RSI: randomExt.float(1000,1),
 BULL_RSI_high: randomExt.float(1000,1),
 BULL_RSI_low: randomExt.float(1000,1),
 
-# IDLE
+
 IDLE_RSI: randomExt.float(1000,1),
 IDLE_RSI_high: randomExt.float(1000,1),
 IDLE_RSI_low: randomExt.float(1000,1),
-# BEAR
+
 BEAR_RSI: randomExt.float(1000,1),
 BEAR_RSI_high: randomExt.float(1000,1),
 BEAR_RSI_low: randomExt.float(1000,1),
 
-# ROC
+
 ROC: randomExt.float(1000,1),
 ROC_lvl: 0,
 
-# BULL/BEAR is defined by the longer SMA trends
-# if SHORT over LONG = BULL
-# if SHORT under LONG = BEAR
 
-# ROC is the LENGHT (averaging)
-# Leave ROC_lvl at 0 otherwise Results are negative
     
   })
 };
