@@ -1,19 +1,19 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'macd_cross',
+  stratName: 'NEO',
   gekkoConfig: {
     watch: {
       exchange: 'binance',
       currency: 'USDT',
-      asset: 'ETH'
+      asset: 'BNB'
     },
 
 //    daterange: 'scan',
 
     daterange: {
-      from: '2020-04-01 00:00',
-      to: '2020-04-18 00:00'
+      from: '2020-08-01 00:00',
+      to: '2020-08-18 00:00'
     },
 
     simulationBalance: {
@@ -64,33 +64,35 @@ const config = {
   candleValues: [5],
   getProperties: () => ({
     
-historySize:randomExt.integer(1000,1),
+#SMA
+SMA_long: randomExt.float(1000,1),
+SMA_short: randomExt.float(1000,1),
+
+#Bull
+BULL_RSI: randomExt.float(1000,1),
+BULL_RSI_high: randomExt.float(1000,1),
+BULL_RSI_low: randomExt.float(1000,1),
+
+# IDLE
+IDLE_RSI: randomExt.float(1000,1),
+IDLE_RSI_high: randomExt.float(1000,1),
+IDLE_RSI_low: randomExt.float(1000,1),
+# BEAR
+BEAR_RSI: randomExt.float(1000,1),
+BEAR_RSI_high: randomExt.float(1000,1),
+BEAR_RSI_low: randomExt.float(1000,1),
+
+# ROC
+ROC: randomExt.float(1000,1),
+ROC_lvl: 0,
+
+# BULL/BEAR is defined by the longer SMA trends
+# if SHORT over LONG = BULL
+# if SHORT under LONG = BEAR
+
+# ROC is the LENGHT (averaging)
+# Leave ROC_lvl at 0 otherwise Results are negative
     
-low:randomExt.integer(100,1), 
-high:randomExt.integer(100,1),
-short:randomExt.integer(100,1), 
-
-
-low:randomExt.integer(100,1),
-high:randomExt.integer(100,1),
-long:randomExt.integer(100,1),
-
-
-low:randomExt.integer(100,1),
-high:randomExt.integer(100,1),
-signal:randomExt.integer(100,1),
-
-
-low :0.5,
-high : 99.0,
-stop_loss : 0.5,
-
-
-low :0.2,
-high :100.0,
-take_profit : 1.0,
-   
-    candleSize: randomExt.pick(config.candleValues)
   })
 };
 
