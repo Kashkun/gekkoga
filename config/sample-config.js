@@ -73,7 +73,7 @@ BULL_RSI_high : randomExt.integer(200, 1),
 BULL_RSI_low : randomExt.integer(200, 1),
 
 
-BEAR_RSI = randomExt.integer(100, 1),
+BEAR_RSI : randomExt.integer(100, 1),
 BEAR_RSI_high : randomExt.integer(200, 1),
 BEAR_RSI_low :  randomExt.integer(200, 1),
 
