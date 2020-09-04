@@ -12,8 +12,8 @@ const config = {
 //    daterange: 'scan',
 
     daterange: {
-      from: '2018-08-01 00:00',
-      to: '2018-08-17 00:00'
+      from: '2020-04-21 00:00',
+      to: '2020-05-09 00:00'
     },
 
     simulationBalance: {
