@@ -89,7 +89,7 @@ ADX_high :  randomExt.integer(100, 1),
 ADX_low :  randomExt.integer(100, 1),
 
 
-PINGPONG_GAINS_PERCENTAGE =  randomExt.integer(200, 1),
+PINGPONG_GAINS_PERCENTAGE :  randomExt.integer(200, 1),
    
 
  candleSize: config.candleValues[randomExt.integer(config.candleValues.length - 1, 0)]
