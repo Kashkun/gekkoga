@@ -63,32 +63,32 @@ const config = {
 
   candleValues: [5,10,15,30,60,120,240],
   getProperties: () => ({
-# SMA INDICATOR
+
 SMA_long : randomExt.integer(1000, 1),
 SMA_short : randomExt.integer(1000, 1),
 
-# RSI BULL
+
 BULL_RSI : randomExt.integer(100, 1),
 BULL_RSI_high : randomExt.integer(200, 1),
 BULL_RSI_low : randomExt.integer(200, 1),
 
-# RSI BEAR
+
 BEAR_RSI = randomExt.integer(100, 1),
 BEAR_RSI_high : randomExt.integer(200, 1),
 BEAR_RSI_low :  randomExt.integer(200, 1),
 
-# MODIFY RSI (depending on ADX)
+
 BULL_MOD_high : randomExt.integer(200, -100),
 BULL_MOD_low :  randomExt.integer(200, -100),
 BEAR_MOD_high :  randomExt.integer(200, -100),
 BEAR_MOD_low : randomExt.integer(200, -100),
 
-# ADX
+
 ADX :  randomExt.integer(100, 1),
 ADX_high :  randomExt.integer(100, 1),
 ADX_low :  randomExt.integer(100, 1),
 
-# PING PONG
+
 PINGPONG_GAINS_PERCENTAGE =  randomExt.integer(200, 1),
     },
 
