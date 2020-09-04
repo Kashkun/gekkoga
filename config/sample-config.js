@@ -64,12 +64,12 @@ const config = {
   candleValues: [5,10,15],
   getProperties: () => ({
 
-shortSize : randomExt.interger(100,1),
+shortSize : randomExt.integer(100,1),
 
 
-mediumSize : randomExt.interger(100,1),
+mediumSize : randomExt.integer(100,1),
 
-longSize : randomExt.interger(100,1),
+longSize : randomExt.integer(100,1),
 
 
    
