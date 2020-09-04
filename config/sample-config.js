@@ -1,7 +1,7 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'MACD_1520024643',
+  stratName: 'Fibonacci Trendlines',
   gekkoConfig: {
     watch: {
       exchange: 'binance',
@@ -64,15 +64,13 @@ const config = {
   candleValues: [5,10,15],
   getProperties: () => ({
 
-short : randomExt.integer(40, -40),
-long: randomExt.integer(40, -40),
-signal : randomExt.integer(20, 1),
-interval : randomExt.integer(20, 1),
+shortSize : randomExt.interger(100,1),
 
 
-down : randomExt.float(1, -1),
-up : randomExt.float(1, -1),
-persistence : 0,
+mediumSize : randomExt.interger(100,1),
+
+longSize : randomExt.interger(100,1),
+
 
    
 
