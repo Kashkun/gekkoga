@@ -1,7 +1,7 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'IWannaBeRich_BBRSI',
+  stratName: 'MACD_1520024643',
   gekkoConfig: {
     watch: {
       exchange: 'binance',
@@ -64,16 +64,15 @@ const config = {
   candleValues: [5,10,15,30,60],
   getProperties: () => ({
 
-interval : randomExt.integer(30, 1),
-low : randomExt.integer(200, 1),
-high : randomExt.integer(200, 1),
-persistence : randomExt.integer(13, 1),
+short : randomExt.integer(13, 7),
+long: randomExt.integer(13, 7),
+signal : randomExt.integer(13, 7),
+interval : randomExt.integer(13, 7),
 
 
-TimePeriod : randomExt.integer(1000, 1),
-NbDevUp : randomExt.integer(1000, 1),
-NbDevDn : randomExt.integer(1000, 1),
-
+down = -0.025
+up = 0.025
+persistence = 1
 
    
 
