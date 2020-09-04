@@ -1,12 +1,12 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'NEO',
+  stratName: 'RSI_BULL_BEAR_ADX_PINGPONG',
   gekkoConfig: {
     watch: {
       exchange: 'binance',
       currency: 'USDT',
-      asset: 'BNB'
+      asset: 'XRP'
     },
 
 //    daterange: 'scan',
@@ -63,26 +63,33 @@ const config = {
 
   candleValues: [5,10,15,30,60,120,240],
   getProperties: () => ({
+# SMA INDICATOR
+SMA_long : randomExt.integer(1000, 1),
+SMA_short : randomExt.integer(1000, 1),
 
-   SMA_long: randomExt.integer(1000, 10),
-SMA_short: randomExt.integer(1000, 10),
+# RSI BULL
+BULL_RSI : randomExt.integer(100, 1),
+BULL_RSI_high : randomExt.integer(200, 1),
+BULL_RSI_low : randomExt.integer(200, 1),
 
+# RSI BEAR
+BEAR_RSI = randomExt.integer(100, 1),
+BEAR_RSI_high : randomExt.integer(200, 1),
+BEAR_RSI_low :  randomExt.integer(200, 1),
 
-BULL_RSI: randomExt.integer(100, 10),
-BULL_RSI_high: randomExt.integer(100, 10),
-BULL_RSI_low: randomExt.integer(100, 10),
+# MODIFY RSI (depending on ADX)
+BULL_MOD_high : randomExt.integer(200, -100),
+BULL_MOD_low :  randomExt.integer(200, -100),
+BEAR_MOD_high :  randomExt.integer(200, -100),
+BEAR_MOD_low : randomExt.integer(200, -100),
 
-IDLE_RSI: randomExt.integer(100, 10),
-IDLE_RSI_high: randomExt.integer(100, 10),
-IDLE_RSI_low: randomExt.integer(100, 10),
+# ADX
+ADX :  randomExt.integer(100, 1),
+ADX_high :  randomExt.integer(100, 1),
+ADX_low :  randomExt.integer(100, 1),
 
-BEAR_RSI: randomExt.integer(100, 10),
-BEAR_RSI_high: randomExt.integer(70, 30),
-BEAR_RSI_low: randomExt.integer(70, 10),
-
-
-ROC: randomExt.integer(1000, 1),
-ROC_lvl: 0,
+# PING PONG
+PINGPONG_GAINS_PERCENTAGE =  randomExt.integer(200, 1),
     },
 
     candleSize: randomExt.pick(config.candleValues)
