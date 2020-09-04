@@ -61,7 +61,7 @@ const config = {
     },
   },
 
-  candleValues: [5,10,15,30,60,120,240],
+  candleValues: [5,10,15,30,60],
   getProperties: () => ({
 
 SMA_long : randomExt.integer(1000, 1),
@@ -92,7 +92,7 @@ ADX_low :  randomExt.integer(100, 1),
 PINGPONG_GAINS_PERCENTAGE =  randomExt.integer(200, 1),
     },
 
-    candleSize: randomExt.pick(config.candleValues)
+ candleSize: config.candleValues[randomExt.integer(config.candleValues.length - 1, 0)]
   })
 };
 
