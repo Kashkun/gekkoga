@@ -70,9 +70,9 @@ signal : randomExt.integer(13, 7),
 interval : randomExt.integer(13, 7),
 
 
-down = -0.025
-up = 0.025
-persistence = 1
+down : -0.025,
+up : 0.025,
+persistence : 1,
 
    
 
