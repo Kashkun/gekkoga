@@ -69,7 +69,7 @@ low : randomExt.integer(200, 1),
 high : randomExt.integer(200, 1),
 persistence : randomExt.integer(13, 1),
 
-[bbands]
+
 TimePeriod : randomExt.integer(1000, 1),
 NbDevUp : randomExt.integer(1000, 1),
 NbDevDn : randomExt.integer(1000, 1),
