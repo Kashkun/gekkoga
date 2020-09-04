@@ -72,7 +72,7 @@ interval : randomExt.integer(20, 1),
 
 down : randomExt.float(1, -1),
 up : randomExt.float(1, -1),
-persistence : randomExt.integer(4, 1),
+persistence : 0,
 
    
 
