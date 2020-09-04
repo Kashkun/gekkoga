@@ -75,10 +75,10 @@ const config = {
    BEAR_RSI_high: randomExt.integer(60, 40),
    BEAR_RSI_low: randomExt.integer(30, 10),
     
-BULL_MOD_high = 5,
-BULL_MOD_low = -5,
-BEAR_MOD_high = 15,
-BEAR_MOD_low = -5,
+BULL_MOD_high: 5,
+BULL_MOD_low : -5,
+BEAR_MOD_high : 15,
+BEAR_MOD_low : -5,
 
 
 
