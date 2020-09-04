@@ -64,15 +64,15 @@ const config = {
   candleValues: [5,10,15],
   getProperties: () => ({
 
-short : randomExt.integer(200, 1),
-long: randomExt.integer(200, 1),
-signal : randomExt.integer(200, 1),
-interval : randomExt.integer(200, 1),
+short : randomExt.integer(40, -40),
+long: randomExt.integer(40, -40),
+signal : randomExt.integer(20, 1),
+interval : randomExt.integer(20, 1),
 
 
-down : randomExt.float(100, -100),
-up : randomExt.float(100, -100),
-persistence : randomExt.integer(100, 1),
+down : randomExt.float(1, -1),
+up : randomExt.float(1, -1),
+persistence : randomExt.integer(4, 1),
 
    
 
