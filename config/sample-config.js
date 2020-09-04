@@ -61,18 +61,18 @@ const config = {
     },
   },
 
-  candleValues: [5,10,15,30,60],
+  candleValues: [5,10,15],
   getProperties: () => ({
 
-short : randomExt.integer(13, 7),
-long: randomExt.integer(13, 7),
-signal : randomExt.integer(13, 7),
-interval : randomExt.integer(13, 7),
+short : randomExt.integer(200, 1),
+long: randomExt.integer(200, 1),
+signal : randomExt.integer(200, 1),
+interval : randomExt.integer(200, 1),
 
 
-down : -0.025,
-up : 0.025,
-persistence : 1,
+down : randomExt.float(100, -100),
+up : randomExt.float(100, -100),
+persistence : randomExt.integer(100, 1),
 
    
 
